@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block css %}
+<link rel="stylesheet" href="{{ url_for ('static', filename='css/home.css') }}">
+{% endblock %}
+
+{% block content%}
+<section class="main-page">
+    <div class="container">
+        <div class="banner">
+            <h1>Hi!</h1>
+            <p>My name is Daria</p>
+            <img class="home-lines circle" src="{{ url_for ('static', filename='images/circle.svg') }}" alt="circle">
+            <p>I’m a Software Developer</p>
+            <img class="home-lines wavy-line" src="{{ url_for ('static', filename='images/wavy_line.svg') }}"
+                 alt="wavy line">
+            <a class="link-to-about" href="{{ url_for ('me') }}">Wanna know more about me? <span class="click-button">Click</span></a>
+            <div class="my-svg">
+                <img src="{{ url_for ('static', filename='images/me.svg') }}" alt="my svg">
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock content %}

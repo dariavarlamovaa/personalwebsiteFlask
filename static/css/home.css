@@ -1,0 +1,49 @@
+.banner {
+    display: flex;
+    margin-bottom: 30px;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding-top: 30px;
+    position: relative;
+}
+
+.banner h1 {
+    font-size: 50px;
+    font-weight: 200;
+}
+
+.banner p {
+    font-size: 40px;
+    letter-spacing: 4px;
+}
+
+.home-lines {
+    position: absolute;
+
+}
+
+.circle {
+    top: 87px;
+    right: 417px;
+}
+
+.wavy-line {
+    top: 218px;
+    right: 346px;
+}
+
+.link-to-about {
+    padding-top: 20px;
+    font-size: 15px;
+}
+
+.click-button {
+    text-decoration: underline;
+}
+
+.click-button:hover {
+    color: #D987CE;
+}

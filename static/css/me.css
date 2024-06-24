@@ -1,0 +1,61 @@
+.about-me {
+    max-width: 700px;
+}
+
+.about-me h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.about-me p {
+    font-size: 30px;
+    line-height: 1.5;
+}
+
+.skills-h2 {
+    text-align: center;
+    margin: 30px;
+}
+
+.banners-about {
+    display: flex;
+    padding-top: 50px;
+}
+
+.about-picture {
+    padding: 0 6em;
+}
+
+.about-picture img {
+    max-width: 300px;
+    border-radius: 30px;
+}
+
+
+.deep-blue {
+    color: #6486c6;
+}
+
+.my-skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.skill-title {
+    padding: 20px;
+    font-size: 30px;
+    background-color: transparent;
+    width: 23%;
+    text-align: center;
+    margin-bottom: 35px;
+    border: solid 4px #6486c6;
+}
+
+.skill-title a {
+    display: block;
+}
+
+.skill-title a {
+    color: #FFFFFF;
+}

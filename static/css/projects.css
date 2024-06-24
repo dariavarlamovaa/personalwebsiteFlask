@@ -1,0 +1,37 @@
+.projects h1 {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.my-project {
+    display: table-cell;
+    width: 30%;
+    text-align: center;
+}
+
+.my-project img {
+    width: 500px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+
+.my-project p {
+    padding: 23px 58px;
+    text-align: justify;
+    line-height: 1.5;
+    min-height: 222px;
+}
+
+.project-button {
+    background-color: #6486c6;
+    padding: 15px 40px;
+    margin: 0 20px 30px 0;
+    border: none;
+    font-size: 20px;
+
+}
+
+.project-button a {
+    color: #FFFFFF;
+
+}

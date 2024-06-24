@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block css %}
+    <link rel="stylesheet" href="{{ url_for ('static', filename='css/me.css') }}">
+{% endblock %}
+{% block content %}
+    <section class="info-about">
+        <div class="about container">
+            <div class="banners-about">
+                <div class="about-me">
+                    <h1>Know Who <strong class="deep-blue">I'M</strong></h1>
+                    <p>I'm a <span class="deep-blue">software developer</span> with a strong enthusiasm for creating digital interactions</p>
+                </div>
+                <div class="about-picture">
+                    <img src="{{ url_for ('static', filename='images/me.jpeg') }}" alt="Coding girl">
+                </div>
+            </div>
+
+            <h2 class="skills-h2">Tool<strong class="deep-blue">box</strong></h2>
+            <div class="my-skills">
+                {% for skill in skills %}
+                    <button class="skill-title">
+                        <a href="{{ skill.url }}">{{ skill.title }}</a>
+                    </button>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+{% endblock content %}
