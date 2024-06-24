@@ -47,3 +47,15 @@
 .click-button:hover {
     color: #D987CE;
 }
+
+.my-svg {
+    position: relative;
+}
+
+.me-line {
+    max-width: 300px;
+    position: absolute;
+    left: -343px;
+    top: -152px;
+
+}
