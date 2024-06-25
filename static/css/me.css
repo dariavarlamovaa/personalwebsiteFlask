@@ -1,34 +1,37 @@
-.about-me {
-    max-width: 700px;
+.banners-about {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+
 }
 
-.about-me h1 {
-    font-size: 60px;
-    margin-bottom: 20px;
+.about-picture {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.my-pic {
+    max-width: 300px;
+    border-radius: 30px;
+}
+
+.about-me {
+    max-width: 600px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
 }
 
 .about-me p {
-    font-size: 30px;
+    font-size: 20px;
     line-height: 1.5;
 }
 
 .skills-h2 {
     text-align: center;
     margin: 30px;
-}
-
-.banners-about {
-    display: flex;
-    padding-top: 50px;
-}
-
-.about-picture {
-    padding: 0 6em;
-}
-
-.about-picture img {
-    max-width: 300px;
-    border-radius: 30px;
 }
 
 

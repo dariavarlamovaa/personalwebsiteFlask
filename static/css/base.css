@@ -6,8 +6,8 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    font-family: "Arial", "Open-Sans", sans-serif;
-    font-weight: 400;
+    font-family: "Helvetica", "Open-Sans", sans-serif;
+    font-weight: 200;
     font-size: 20px;
     color: #000000;
     background-color: #FFFFFF;
@@ -78,6 +78,7 @@ svg {
     border: 0;
     margin: 20px;
     font-size: 20px;
+    text-transform: uppercase;
 }
 
 .footer-nav {

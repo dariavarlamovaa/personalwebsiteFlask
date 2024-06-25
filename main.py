@@ -41,7 +41,7 @@ def me():
     return render_template('me.html', title='me', menu=db.get_menu())
 
 
-@app.route('/projects')
+@app.route('/portfolio')
 def contacts():
     connection = connect_db()
     db = DataBase(connection)

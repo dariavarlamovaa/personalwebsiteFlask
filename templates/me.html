@@ -1,29 +1,32 @@
 {% extends 'base.html' %}
 {% block css %}
-    <link rel="stylesheet" href="{{ url_for ('static', filename='css/me.css') }}">
+<link rel="stylesheet" href="{{ url_for ('static', filename='css/me.css') }}">
 {% endblock %}
 {% block content %}
-    <section class="info-about">
-        <div class="about container">
-            <div class="banners-about">
-                <div class="about-me">
-                    <h1>Know Who <strong class="deep-blue">I'M</strong></h1>
-                    <p>I'm a <span class="deep-blue">software developer</span> with a strong enthusiasm for creating digital interactions</p>
-                </div>
-                <div class="about-picture">
-                    <img src="{{ url_for ('static', filename='images/me.jpeg') }}" alt="Coding girl">
-                </div>
+<section class="info-about">
+    <div class="about container">
+        <div class="banners-about">
+            <div class="about-picture">
+                <img src="{{ url_for ('static', filename='images/me-arrow.svg') }}" alt="me :D">
+                <img class="my-pic" src="{{ url_for ('static', filename='images/me.jpeg') }}" alt="Coding girl">
             </div>
-
-            <h2 class="skills-h2">Tool<strong class="deep-blue">box</strong></h2>
-            <div class="my-skills">
-                {% for skill in skills %}
-                    <button class="skill-title">
-                        <a href="{{ skill.url }}">{{ skill.title }}</a>
-                    </button>
-                {% endfor %}
+            <div class="about-me">
+                <p>Passionate Python enthusiast with a fervent love for programming and a knack for problem-solving. 🐍
+                </p>
+                <br>
+                <p>My journey in tech has equipped me with expertise across a spectrum of technologies, including
+                    Python, Django/DRF, Flask, SQLAlchemy, FastAPI, PostgreSQL, MySQL, Git, HTML5, CSS3, JavaScript,
+                    jQuery, and more.</p>
+                <br>
+                <p>I'm currently available for hire: remote/full-time.
+                </p>
             </div>
         </div>
-    </section>
+
+        <!--            <h2 class="skills-h2">Tool<strong class="deep-blue">box</strong></h2>-->
+        <!--            <div class="my-skills">-->
+        <!--            </div>-->
+    </div>
+</section>
 
 {% endblock content %}
