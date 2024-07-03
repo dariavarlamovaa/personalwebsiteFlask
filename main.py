@@ -4,6 +4,7 @@ import sqlite3
 from Database import DataBase
 
 app = Flask(__name__,
+            
             static_url_path='',
             static_folder='static',
             template_folder='templates')
@@ -42,7 +43,7 @@ def me():
 
 
 @app.route('/portfolio')
-def contacts():
+def portfolio():
     connection = connect_db()
     db = DataBase(connection)
     return render_template('projects.html', title='projects', menu=db.get_menu())

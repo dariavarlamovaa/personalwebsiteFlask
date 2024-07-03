@@ -11,21 +11,29 @@
                 <img class="my-pic" src="{{ url_for ('static', filename='images/me.jpeg') }}" alt="Coding girl">
             </div>
             <div class="about-me">
-                <p>I am a software developer from <strong class="strong-word">Finland</strong>.</p>
+                <p>I am a software developer from <strong class="strong-word blue">Finland</strong>, focused mainly in
+                    backend development.</p>
                 <br>
-                <p>Passionate <strong class="strong-word">Python</strong> enthusiast with a fervent love for programming and a knack for problem-solving.
+                <p>Passionate <strong class="strong-word blue">Python</strong> enthusiast with a fervent love for
+                    programming and a knack for problem-solving.
                 </p>
                 <br>
-                <p>My journey in tech has equipped me with expertise across a spectrum of technologies, including
-                    Python, Django/DRF, Flask, SQLAlchemy, FastAPI, PostgreSQL, MySQL, Git, HTML5, CSS3, JavaScript,
-                    jQuery, and more.</p>
+                <p>I have worked on several notable projects, including <strong class="strong-word violet">Luka</strong>,
+                    which is
+                    created with the aim of improving the process of interaction between the doctor and patients.</p>
                 <br>
-                <p>I'm currently available for hire: remote/full-time.
+                <p>I'm currently available for hire: remote/onsite.
                 </p>
+                <img class="highlight" src="{{ url_for ('static', filename='images/highlight.svg') }}" alt="highlight">
             </div>
         </div>
-        <div class="skillset">
-
+        <div class="toolbox">
+            <img class="toolbox-img" src="{{ url_for ('static', filename='images/toolbox.svg') }}" alt="toolbox">
+        </div>
+        <div class="tools">
+            {% for tool in tools %}
+            {{ tool }}
+            {% endfor %}
         </div>
     </div>
 </section>

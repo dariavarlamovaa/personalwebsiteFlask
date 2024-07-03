@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: flex-end;
+    margin-bottom: 100px;
 
 }
 
@@ -22,6 +23,7 @@
     display: flex;
     justify-content: space-around;
     flex-direction: column;
+    position: relative;
 }
 
 .about-me p {
@@ -29,40 +31,20 @@
     line-height: 1.5;
 }
 
-.skills-h2 {
-    text-align: center;
-    margin: 30px;
-}
-
-
-.deep-blue {
-    color: #6486c6;
-}
-
-.my-skills {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.skill-title {
-    padding: 20px;
-    font-size: 30px;
-    background-color: transparent;
-    width: 23%;
-    text-align: center;
-    margin-bottom: 35px;
-    border: solid 4px #6486c6;
-}
-
-.skill-title a {
-    display: block;
-}
-
-.skill-title a {
-    color: #FFFFFF;
-}
-
-.strong-word {
+.blue {
     color: #82B4E0;
+}
+
+.violet {
+    color: #9374e1;
+}
+
+.highlight {
+    position: absolute;
+    bottom: -3px;
+    right: 190px;
+}
+
+.toolbox {
+    text-align: center;
 }
