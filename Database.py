@@ -6,19 +6,10 @@ class DataBase:
         self.__db = db
         self.__cur = db.cursor()
 
-    def _get_objects(self, table):
+    def _get_objects(self, table, *args):
         try:
-            self.__cur.execute(f'SELECT * FROM {table}')
-            res = self.__cur.fetchall()
-            if res:
-                return res
-        except IOError:
-            print('Error while connecting to database')
-        return []
-
-    def _get_specific_objects(self, table, value):
-        try:
-            self.__cur.execute(f'SELECT * FROM {table} WHERE category={value}')
+            columns = ', '.join(args)
+            self.__cur.execute(f'SELECT {columns} FROM {table}')
             res = self.__cur.fetchall()
             if res:
                 return res
@@ -27,7 +18,7 @@ class DataBase:
         return []
 
     def get_menu(self):
-        return self._get_objects('menu')
+        return self._get_objects('menu', 'title', 'url')
 
-    # def get_tools(self):
-    #     return self._get_specific_objects('tools')
+    def get_tools(self):
+        return self._get_objects('tools', 'title', 'category')

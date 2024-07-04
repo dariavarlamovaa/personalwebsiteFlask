@@ -31,9 +31,13 @@
             <img class="toolbox-img" src="{{ url_for ('static', filename='images/toolbox.svg') }}" alt="toolbox">
         </div>
         <div class="tools">
-            {% for tool in tools %}
-            {{ tool }}
-            {% endfor %}
+
+<!--            {% for category, title in tools %}-->
+<!--            <p>{{ category }}</p>-->
+<!--            <div class="category">-->
+<!--                <p>{{ title }}</p>-->
+<!--            </div>-->
+<!--            {% endfor %}-->
         </div>
     </div>
 </section>
