@@ -1,4 +1,3 @@
-
 class DataBase:
     def __init__(self, db):
         self.__db = db
@@ -19,4 +18,11 @@ class DataBase:
         return self._get_objects('menu', 'title', 'url')
 
     def get_tools(self):
-        return self._get_objects('tools', 'title', 'category')
+        tools = self._get_objects('tools', 'title', 'category')
+        grouped_tools = {}
+        for tool, category in tools:
+            if not grouped_tools.get(category):
+                grouped_tools[category] = []
+
+            grouped_tools[category].append(tool)
+        return grouped_tools

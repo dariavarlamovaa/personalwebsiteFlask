@@ -29,15 +29,20 @@
         </div>
         <div class="toolbox">
             <img class="toolbox-img" src="{{ url_for ('static', filename='images/toolbox.svg') }}" alt="toolbox">
+            <p></p>
         </div>
         <div class="tools">
+            <div class="category-and-tools">
+                {% for category, titles in tools.items() %}
+                <p class="category">{{ category }}</p>
+                <div class="titles">
+                    {% for title in titles %}
+                    <p class="one-title">{{ title }}</p>
+                    {% endfor %}
+                </div>
+                {% endfor %}
+            </div>
 
-<!--            {% for category, title in tools %}-->
-<!--            <p>{{ category }}</p>-->
-<!--            <div class="category">-->
-<!--                <p>{{ title }}</p>-->
-<!--            </div>-->
-<!--            {% endfor %}-->
         </div>
     </div>
 </section>

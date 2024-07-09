@@ -48,3 +48,7 @@
 .toolbox {
     text-align: center;
 }
+
+.category-and-tools {
+    display: flex;
+}
