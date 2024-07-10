@@ -18,11 +18,5 @@ class DataBase:
         return self._get_objects('menu', 'title', 'url')
 
     def get_tools(self):
-        tools = self._get_objects('tools', 'title', 'category')
-        grouped_tools = {}
-        for tool, category in tools:
-            if not grouped_tools.get(category):
-                grouped_tools[category] = []
-
-            grouped_tools[category].append(tool)
-        return grouped_tools
+        tools = self._get_objects('tools', 'title')
+        return tools

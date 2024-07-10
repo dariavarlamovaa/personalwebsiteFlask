@@ -27,24 +27,19 @@
                 <img class="highlight" src="{{ url_for ('static', filename='images/highlight.svg') }}" alt="highlight">
             </div>
         </div>
+        <hr class="horizontal-line">
         <div class="toolbox">
             <img class="toolbox-img" src="{{ url_for ('static', filename='images/toolbox.svg') }}" alt="toolbox">
-            <p></p>
-        </div>
-        <div class="tools">
-            <div class="category-and-tools">
-                {% for category, titles in tools.items() %}
-                <p class="category">{{ category }}</p>
-                <div class="titles">
-                    {% for title in titles %}
-                    <p class="one-title">{{ title }}</p>
-                    {% endfor %}
-                </div>
+            <p class="tools-sentence">The skills, tools and technologies I am really good at:</p>
+            <div class="tools">
+                {% for tool in tools %}
+                <p class="one-tool">{{ tool.title }}</p>
                 {% endfor %}
             </div>
-
         </div>
+
     </div>
+
 </section>
 
 {% endblock content %}

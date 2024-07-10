@@ -45,10 +45,40 @@
     right: 190px;
 }
 
-.toolbox {
-    text-align: center;
+.horizontal-line {
+    border: 0.1px solid #d3d3d3;
 }
 
-.category-and-tools {
-    display: flex;
+.toolbox {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.toolbox-img {
+    margin-bottom: 30px;
+}
+
+.tools-sentence {
+    text-transform: uppercase;
+    margin: 0 auto;
+    font-size: 15px;
+}
+
+.tools {
+    /*display: flex;*/
+    /*gap: 50px;*/
+    /*flex-wrap: wrap;*/
+    /*justify-content: center;*/
+    /*margin-top: 40px;*/
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    padding: 40px 0;
+    grid-row-gap: 40px;
+}
+
+.one-tool {
+    border: 1px solid #1F598A;
+    max-width: max-content;
+    border-radius: 20px;
+    padding: 10px 15px;
 }
