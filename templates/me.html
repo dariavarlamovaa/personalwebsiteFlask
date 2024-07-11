@@ -29,7 +29,9 @@
         </div>
         <hr class="horizontal-line">
         <div class="toolbox">
-            <img class="toolbox-img" src="{{ url_for ('static', filename='images/toolbox.svg') }}" alt="toolbox">
+            <div class="toolbox-image">
+                <img class="toolbox-img" src="{{ url_for ('static', filename='images/toolbox.svg') }}" alt="toolbox">
+            </div>
             <p class="tools-sentence">The skills, tools and technologies I am really good at:</p>
             <div class="tools">
                 {% for tool in tools %}

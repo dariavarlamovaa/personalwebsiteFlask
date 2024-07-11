@@ -50,12 +50,11 @@
 }
 
 .toolbox {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
     text-align: center;
-    padding: 50px 0;
-}
-
-.toolbox-img {
-    margin-bottom: 30px;
+    padding-top: 40px;
 }
 
 .tools-sentence {
@@ -65,15 +64,10 @@
 }
 
 .tools {
-    /*display: flex;*/
-    /*gap: 50px;*/
-    /*flex-wrap: wrap;*/
-    /*justify-content: center;*/
-    /*margin-top: 40px;*/
     display: grid;
     grid-template-columns: auto auto auto auto auto;
-    padding: 40px 0;
     grid-row-gap: 40px;
+    place-items: center;
 }
 
 .one-tool {
