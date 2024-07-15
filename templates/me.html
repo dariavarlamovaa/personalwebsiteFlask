@@ -32,16 +32,101 @@
             <div class="toolbox-image">
                 <img class="toolbox-img" src="{{ url_for ('static', filename='images/toolbox.svg') }}" alt="toolbox">
             </div>
-            <p class="tools-sentence">The skills, tools and technologies I am really good at:</p>
+            <p class="tools-sentence sentence-me">The skills, tools & technologies I am really good at:</p>
             <div class="tools">
                 {% for tool in tools %}
                 <p class="one-tool">{{ tool.title }}</p>
                 {% endfor %}
             </div>
         </div>
+        <hr class="horizontal-line">
+        <div class="experience">
+            <div class="experience-picture">
+                <img class="experience-img" src="{{ url_for ('static', filename='images/experience.svg') }}"
+                     alt="experience">
+            </div>
+            <p class="experience-sentence sentence-me">Here is a quick summary of my most recent experiences:</p>
+            <div class="all-jobs">
+                <div class="experience-info">
+                    <div class="job-info">
+                        <p class="position">Software Developer</p>
+                        <p class="company">DAP Devs Solutions</p>
+                        <p class="period">Nov 2023 - Present</p>
+                        <p class="place">Remote</p>
+                    </div>
+                    <div class="job-responsibilities">
+                        <ul>
+                            <li><p class="one-responsible">Developed and optimized Python web-applications using the
+                                Django/DRF framework.</p></li>
+                            <li><p class="one-responsible">Developed responsive and user-friendly web interfaces using
+                                JavaScript.</p></li>
+                            <li><p class="one-responsible">Created site layouts in Figma.</p></li>
+                            <li><p class="one-responsible">Worked with SQLite, MySQL and PostgreSQL databases, wrote
+                                queries.</p></li>
+                            <li><p class="one-responsible">Used Git, managed branches.</p></li>
+                            <li><p class="one-responsible">Developed unit-tests to check the functionality and
+                                performance
+                                of web-applications.</p></li>
+                            <li><p class="one-responsible">Interacted with clients, agreed on requirements and
+                                additional
+                                functionality.</p></li>
+                            <li><p class="one-responsible">Worked in a team with other developers, conducted a code
+                                review.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="experience-info">
+                    <div class="job-info">
+                        <p class="position">Sales Manager</p>
+                        <p class="company">Garti</p>
+                        <p class="period">2021 - 2022</p>
+                        <p class="place">Remote</p>
+                    </div>
+                    <div class="job-responsibilities">
+                        <ul>
+                            <li><p class="one-responsible">Collected and analyzed data on the market, competitors and
+                                consumers for strategic planning.</p></li>
+                            <li><p class="one-responsible">Effectively interacted with clients and successfully
+                                implemented
+                                large transactions.</p></li>
+                            <li><p class="one-responsible">Achieved and exceeded the set sales goals from the head.</p>
+                            </li>
+                        </ul>
 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="horizontal-line">
+        <div class="education">
+            <div class="education-picture">
+                <img class="education-img" src="{{ url_for ('static', filename='images/education.svg') }}"
+                     alt="education">
+            </div>
+            <p class="education-sentence sentence-me">Some of my degrees, licenses & certifications</p>
+            <div class="education-info">
+                <div class="degree-info">
+                    <p class="university">Tomsk State University</p>
+                    <p class="profession">Bachelor of Engineering - BE, Computer Software Engineering</p>
+                    <p class="period">2025</p>
+                    <p class="grade">5/5</p>
+                </div>
+                <div class="degree-info">
+                    <p class="university">Computer Academy "TOP"</p>
+                    <p class="profession">Computer Software Engineering</p>
+                    <p class="period">Oct 2022 - Nov 2023</p>
+                    <p class="grade">Excellent</p>
+                </div>
+                <div class="degree-info">
+                    <p class="university">Petrozavodsk State University (PetrSU)</p>
+                    <p class="profession">Bachelor's Degree, Hospitality, Tourism and Leisure</p>
+                    <p class="period">2020 - 2024</p>
+                    <p class="grade">5/5</p>
+                </div>
+            </div>
+        </div>
     </div>
-
 </section>
 
 {% endblock content %}

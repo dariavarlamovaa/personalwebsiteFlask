@@ -45,22 +45,21 @@
     right: 190px;
 }
 
-.horizontal-line {
-    border: 0.1px solid #d3d3d3;
-}
-
-.toolbox {
+.toolbox, .experience, .education {
     display: flex;
     flex-direction: column;
     gap: 50px;
-    text-align: center;
-    padding-top: 40px;
 }
 
-.tools-sentence {
+.toolbox, .experience-picture, .education-picture {
+    text-align: center;
+}
+
+.sentence-me {
     text-transform: uppercase;
     margin: 0 auto;
     font-size: 15px;
+    text-align: center;
 }
 
 .tools {
@@ -75,4 +74,57 @@
     max-width: max-content;
     border-radius: 20px;
     padding: 10px 15px;
+}
+
+.all-jobs {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.experience-info {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    justify-content: space-evenly;
+}
+
+.job-responsibilities {
+    max-width: 765px;
+}
+
+.job-info {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    min-width: 190px;
+}
+
+.position, .university {
+    font-weight: 600;
+}
+
+.company, .profession {
+    font-weight: 400;
+    color: #343434;
+    font-size: 18px;
+}
+
+.period, .place, .grade {
+    color: #a7a7a7;
+    font-size: 15px;
+}
+
+.education-info {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: max-content;
+    padding: 0 50px;
+}
+
+.degree-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }

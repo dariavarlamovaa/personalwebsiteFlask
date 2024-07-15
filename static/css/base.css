@@ -43,16 +43,20 @@ svg {
 }
 
 .container {
-    width: 1240px;
+    max-width: 1240px;
+    min-width: 280px;
     margin: 0 auto;
+    box-sizing: border-box;
 }
 
-.header-menu {
-    padding: 50px 0;
-    width: 100%;
+.header-container {
     text-align: right;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    padding: 40px 50px;
+    margin: auto;
+    position: relative;
 }
 
 .top {
@@ -70,6 +74,9 @@ svg {
     display: inline-block;
     vertical-align: middle;
     line-height: 0;
+    width: 100%;
+    position: absolute;
+    right: 50%;
 }
 
 .menu-nav-item {
@@ -81,28 +88,72 @@ svg {
     text-transform: uppercase;
 }
 
-.footer-nav {
-    position: sticky;
+.next-steps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding-bottom: 30px;
 }
 
-.page-footer_wrapper {
+.positive-sentence {
+    color: #707070;
+    font-size: 17px;
+}
+
+.dev-email {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.mail-parts {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    box-sizing: border-box;
-    padding: 30px 0;
-    font-size: 11px;
-    font-weight: 200;
+    flex-direction: row;
     align-items: center;
+    gap: 10px;
+}
+
+.another-platforms {
+    font-size: 15px;
+    color: #707070;
 }
 
 .footer-icons {
     list-style: none;
     display: flex;
-    gap: 30px;
+    gap: 20px;
     padding: 0;
 }
 
 .social-icon a {
     color: #1F598A;
+}
+
+.page-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-sizing: border-box;
+    font-size: 11px;
+    font-weight: 200;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 0;
+}
+
+.footer-copyright {
+    border-right: 1px solid #1F598A;
+    padding-right: 10px;
+}
+
+.red-word {
+    color: #EF2424DD;
+    font-weight: 600;
+}
+
+
+.horizontal-line {
+    border: 0.1px solid #d3d3d3;
+    margin-top: 60px;
+    margin-bottom: 60px;
 }
