@@ -49,14 +49,18 @@ svg {
     box-sizing: border-box;
 }
 
+.header-menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .header-container {
-    text-align: right;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 40px 50px;
-    margin: auto;
-    position: relative;
+    width: 100%;
 }
 
 .top {
@@ -66,26 +70,34 @@ svg {
     align-items: center;
 }
 
+.logo {
+    flex: 1;
+}
+
 .logo img {
     max-width: 40px;
 }
 
 .menu-nav {
-    display: inline-block;
-    vertical-align: middle;
+    display: flex;
+    justify-content: center;
     line-height: 0;
-    width: 100%;
-    position: absolute;
-    right: 50%;
+    flex: 2;
 }
 
 .menu-nav-item {
     background: transparent;
     cursor: pointer;
     border: 0;
-    margin: 20px;
+    padding: 0 20px;
     font-size: 20px;
     text-transform: uppercase;
+}
+
+.mail-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .next-steps {
