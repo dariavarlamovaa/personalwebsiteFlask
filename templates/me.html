@@ -11,7 +11,8 @@
                 <img class="my-pic" src="{{ url_for ('static', filename='images/me.jpeg') }}" alt="Coding girl">
             </div>
             <div class="about-me">
-                <p>I am a software developer from <strong class="strong-word blue">Finland</strong>, focused mainly in
+                <p>I am a software developer based in <strong class="strong-word blue">Finland</strong>, focused mainly
+                    in
                     backend development.</p>
                 <br>
                 <p>Passionate <strong class="strong-word blue">Python</strong> enthusiast with a fervent love for
@@ -37,6 +38,9 @@
                 {% for tool in tools %}
                 <p class="one-tool">{{ tool.title }}</p>
                 {% endfor %}
+            </div>
+            <div class="and-more">
+                <img class="and-more-img" src="{{ url_for ('static', filename='images/and-more.svg') }}" alt="and more">
             </div>
         </div>
         <hr class="horizontal-line">
