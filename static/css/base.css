@@ -100,6 +100,14 @@ svg {
     justify-content: flex-end;
 }
 
+.mail-image:hover {
+    transform: scale(1.1);
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+    transition-property: all;
+}
+
 .next-steps {
     display: flex;
     flex-direction: column;
