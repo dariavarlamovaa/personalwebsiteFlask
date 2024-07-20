@@ -20,3 +20,7 @@ class DataBase:
     def get_tools(self):
         tools = self._get_objects('tools', 'title')
         return tools
+
+    def get_projects(self):
+        projects = self._get_objects('projects', '*')
+        return projects
