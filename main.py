@@ -46,7 +46,7 @@ def me():
 def portfolio():
     connection = connect_db()
     db = DataBase(connection)
-    return render_template('projects.html', title='projects', menu=db.get_menu())
+    return render_template('projects.html', title='projects', menu=db.get_menu(), projects=db.get_projects())
 
 
 # @app.errorhandler(404)

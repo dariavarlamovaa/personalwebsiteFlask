@@ -14,3 +14,35 @@
     border-top: 2px solid #a7a7a7;
     height: 0;
 }
+
+.all-projects {
+    padding-top: 50px;
+    display: flex;
+    gap: 100px;
+    flex-direction: column;
+}
+
+.one-project {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    position: relative;
+}
+
+.one-project:nth-child(2n+2) {
+    flex-direction: row-reverse;
+}
+
+.project-image {
+    max-width: 500px;
+    position: relative;
+    text-align: center;
+}
+
+.project-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+}
