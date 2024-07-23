@@ -22,5 +22,5 @@ class DataBase:
         return tools
 
     def get_projects(self):
-        projects = self._get_objects('projects', '*')
+        projects = self._get_objects('projects', 'title', 'description', 'url', 'tools', 'picture')
         return projects

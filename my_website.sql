@@ -16,5 +16,7 @@ title TEXT NOT NULL,
 description TEXT NOT NULL,
 url TEXT NOT NULL,
 picture TEXT
-)
+);
 
+ALTER TABLE projects
+ADD COLUMN tools TEXT

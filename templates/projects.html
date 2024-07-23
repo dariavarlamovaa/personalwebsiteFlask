@@ -7,7 +7,7 @@
     <div class="projects container">
         <div class="projects-top">
             <h1 class="my-projects-h1">My projects</h1>
-            <div class="line-project" style="opacity: 1; width: 100%;"></div>
+            <div class="line-project line" style="opacity: 1; width: 100%;"></div>
         </div>
         <div class="all-projects">
             {% for project in projects[::-1] %}
@@ -16,11 +16,15 @@
                     <img class="project-image" src="{{ project.picture }}" alt="{{ project.title }}">
                 </div>
                 <div class="project-info">
-                    <h3>{{ project.title }}</h3>
-                    <p>{{ project.description }}</p>
-                    <button class="project-button"><a href="{{ project.url }}" target="_blank">view details</a></button>
+                    <p class="project-description">{{ project.description }}</p>
+                    <span class="project-title">{{ project.title }}</span>
+                    <p class="project-tools">{{ project.tools }}</p>
+                </div>
+                <div class="project-details">
+                    <a href="{{ project.url }}" target="_blank">view the project —></a>
                 </div>
             </div>
+            <div class="line-between-projects line" style="opacity: 1; width: 100%;"></div>
             {% endfor %}
         </div>
 
