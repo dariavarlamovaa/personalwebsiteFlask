@@ -24,7 +24,9 @@
                     <a href="{{ project.url }}" target="_blank">view the project —></a>
                 </div>
             </div>
+            {% if not loop.last %}
             <div class="line-between-projects line" style="opacity: 1; width: 100%;"></div>
+            {% endif %}
             {% endfor %}
         </div>
 
