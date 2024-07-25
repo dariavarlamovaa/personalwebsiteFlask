@@ -47,19 +47,24 @@ svg {
     min-width: 280px;
     margin: 0 auto;
     box-sizing: border-box;
+    /*padding-top: 150px !important;*/
 }
 
 .header-menu {
     width: 100%;
     display: flex;
     justify-content: center;
+    /*position: fixed;*/
+    background-color: #FFFFFF;
+    z-index: 10;
+    /*border-bottom: 1px solid #292F34;*/
 }
 
 .header-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 40px 50px;
+    padding: 35px 50px;
     width: 100%;
 }
 
@@ -98,10 +103,11 @@ svg {
     flex: 1;
     display: flex;
     justify-content: flex-end;
+    transition: all .5s ease-out 0s !important;
 }
 
 .mail-image:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     transition-duration: 0.3s;
     transition-timing-function: ease-in-out;
     transition-delay: 0s;

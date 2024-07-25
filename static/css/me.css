@@ -78,6 +78,11 @@
     max-width: max-content;
     border-radius: 20px;
     padding: 10px 15px;
+    transition: all .5s ease 0s!important;
+}
+
+.one-tool:hover {
+    transform: scale(1.08) !important;
 }
 
 .all-jobs {
