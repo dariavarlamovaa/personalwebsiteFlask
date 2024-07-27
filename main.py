@@ -19,12 +19,12 @@ def connect_db():
     return con
 
 
-# def create_db():
-#     db = connect_db()
-#     with open('my_website.sql', 'r') as f:
-#         db.cursor().executescript(f.read())
-#     db.commit()
-#     db.close()
+def create_db():
+    db = connect_db()
+    with open('my_website.sql', 'r') as f:
+        db.cursor().executescript(f.read())
+    db.commit()
+    db.close()
 
 
 @app.route('/', methods=['GET'])
@@ -56,5 +56,6 @@ def portfolio():
 #     return render_template('page_not_found.html', title='Page not found', menu=db.get_menu())
 
 if __name__ == '__main__':
-    # create_db()
+    if not os.path.exists(app.config['DATABASE']):
+        create_db()
     app.run(debug=True)
