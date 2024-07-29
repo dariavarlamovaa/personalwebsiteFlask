@@ -6,7 +6,6 @@
     gap: 35px;
     align-items: center;
     padding-top: 30px;
-    position: relative;
     max-width: 600px;
     margin: 0 auto;
 }
@@ -21,24 +20,27 @@
     letter-spacing: 4px;
 }
 
+.parts {
+    position: relative;
+}
+
 .home-lines {
     position: absolute;
 
 }
 
 .exclamation-mark {
-    top: 19px;
-    right: 256px;
+    left: 52px;
+    top: -9px;
 }
 
 .circle {
-    top: 105px;
-    right: 95px;
+    right: -16px;
+    top: -17px;
 }
 
 .wavy-line {
-    top: 250px;
-    right: 14px;
+    right: 0;
 }
 
 .link-to-about {

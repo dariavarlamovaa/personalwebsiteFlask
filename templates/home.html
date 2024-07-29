@@ -2,19 +2,28 @@
 
 {% block css %}
 <link rel="stylesheet" href="{{ url_for ('static', filename='css/home.css') }}">
+<link rel="stylesheet" href="{{ url_for ('static', filename='css/media_home.css') }}">
 {% endblock %}
 
 {% block content%}
 <section class="main-page">
     <div class="container">
         <div class="banner">
-            <h1>Hi</h1>
-            <img class="home-lines exclamation-mark" src="{{ url_for ('static', filename='images/exclamation_mark.svg') }}" alt="exclamation mark">
-            <p>My name is Daria</p>
-            <img class="home-lines circle" src="{{ url_for ('static', filename='images/circle.svg') }}" alt="circle">
-            <p>I am a Software Developer</p>
-            <img class="home-lines wavy-line" src="{{ url_for ('static', filename='images/wavy_line.svg') }}"
-                 alt="wavy line">
+            <div class="first-part parts">
+                <h1>Hi</h1>
+                <img class="home-lines exclamation-mark"
+                     src="{{ url_for ('static', filename='images/exclamation_mark.svg') }}" alt="exclamation mark">
+            </div>
+            <div class="second-part parts">
+                <p>My name is Daria</p>
+                <img class="home-lines circle" src="{{ url_for ('static', filename='images/circle.svg') }}"
+                     alt="circle">
+            </div>
+            <div class="third-part parts">
+                <p>I am a Software Developer</p>
+                <img class="home-lines wavy-line" src="{{ url_for ('static', filename='images/wavy_line.svg') }}"
+                     alt="wavy line">
+            </div>
             <a class="link-to-about" href="{{ url_for ('me') }}">Want to know more about me? <span class="click-button">Click</span></a>
             <div class="my-svg">
                 <img class="me-line" src="{{ url_for ('static', filename='images/me-line.svg') }}" alt="me line">
