@@ -2,4 +2,17 @@
     .banner {
         padding-top: 100px;
     }
+
+    .me-line {
+        display: none;
+    }
+
+}
+
+
+@media screen and (max-width: 375px) {
+    .banner {
+        gap: 100px
+    }
+
 }
