@@ -25,6 +25,11 @@
             <a class="menu-nav-item" href="{{ m.url }}">{{ m.title }}</a>
             {% endfor %}
         </div>
+        <div class="navigation">
+            {% for m in menu %}
+            <a class="menu-nav-item" href="{{ m.url }}">{{ m.title }}</a>
+            {% endfor %}
+        </div>
         <div class="mail-image">
             <a href="mailto: dariavarlamovaa@gmail.com"
                class="my-email"><img src="{{ url_for ('static', filename='images/my-mail.svg') }}" alt="mail"></a>
@@ -83,5 +88,6 @@
         </div>
     </div>
 </footer>
+<script defer src="{{ url_for ('static', filename='js/burger-menu.js') }}"></script>
 </body>
 </html>

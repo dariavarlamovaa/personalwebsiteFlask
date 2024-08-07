@@ -99,6 +99,19 @@ svg {
     text-transform: uppercase;
 }
 
+.navigation {
+    display: none;
+    overflow: hidden;
+    flex-direction: column;
+    transition: transform .5s;
+    height: max-content;
+    z-index: 50;
+    background-color: white;
+    animation: burgerAnimation 0.4s;
+    padding-right: 5px;
+
+}
+
 .mail-image {
     flex: 1;
     display: flex;

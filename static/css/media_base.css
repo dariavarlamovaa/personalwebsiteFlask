@@ -19,5 +19,62 @@
 
 @media screen and (max-width: 600px) {
     .menu-nav {
+        display: none;
+        overflow: hidden;
+    }
+
+
+
+    .navigation.active {
+        display: flex;
+        opacity: 1;
+    }
+
+    .burger-menu {
+        display: flex;
+        position: relative;
+        z-index: 50;
+        align-items: center;
+        width: 30px;
+        height: 27px;
+        cursor: pointer;
+    }
+
+    .burger-menu span {
+        height: 2px;
+        width: 80%;
+        transform: scale(1);
+        background-color: #74924a;
+    }
+
+    .burger-menu:before, .burger-menu:after {
+        content: '';
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        background-color: #74924a;
+        transition: all 0.5s ease 0s;
+    }
+
+    .burger-menu:before {
+        top: 0;
+    }
+
+    .burger-menu:after {
+        bottom: 0;
+    }
+
+    .burger-menu.active span {
+        transform: scale(0);
+    }
+
+    .burger-menu.active::before {
+        top: 50%;
+        transform: rotate(-45deg) translate(0, -50%);
+    }
+
+    .burger-menu.active:after {
+        bottom: 50%;
+        transform: rotate(45deg) translate(0, 50%);
     }
 }
