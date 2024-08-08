@@ -59,7 +59,7 @@ svg {
     /*border-bottom: 1px solid #292F34;*/
 }
 
-.header-container {
+.all-header-components {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -95,7 +95,7 @@ svg {
     cursor: pointer;
     border: 0;
     padding: 0 20px;
-    font-size: 20px;
+    font-size: 22px;
     text-transform: uppercase;
 }
 
@@ -108,7 +108,9 @@ svg {
     z-index: 50;
     background-color: white;
     animation: burgerAnimation 0.4s;
-    padding-right: 5px;
+    text-align: right;
+    border-bottom: 1px solid #807e7e;
+    gap: 10px;
 
 }
 

@@ -15,27 +15,29 @@
 {% block header %}
 <header class="header-menu">
     <div class="header-container">
-        <div class="logo">
-            <a href="{{ url_for ('home') }}">
-                <img src="{{ url_for ('static', filename='images/D.svg') }}" alt="logo">
-            </a>
-        </div>
-        <div class="menu-nav">
-            {% for m in menu %}
-            <a class="menu-nav-item" href="{{ m.url }}">{{ m.title }}</a>
-            {% endfor %}
+        <div class="all-header-components">
+            <div class="logo">
+                <a href="{{ url_for ('home') }}">
+                    <img src="{{ url_for ('static', filename='images/D.svg') }}" alt="logo">
+                </a>
+            </div>
+            <div class="menu-nav">
+                {% for m in menu %}
+                <a class="menu-nav-item" href="{{ m.url }}">{{ m.title }}</a>
+                {% endfor %}
+            </div>
+            <div class="mail-image">
+                <a href="mailto: dariavarlamovaa@gmail.com"
+                   class="my-email"><img src="{{ url_for ('static', filename='images/my-mail.svg') }}" alt="mail"></a>
+            </div>
+            <div class="burger-menu" id="burger">
+                <span></span>
+            </div>
         </div>
         <div class="navigation">
             {% for m in menu %}
             <a class="menu-nav-item" href="{{ m.url }}">{{ m.title }}</a>
             {% endfor %}
-        </div>
-        <div class="mail-image">
-            <a href="mailto: dariavarlamovaa@gmail.com"
-               class="my-email"><img src="{{ url_for ('static', filename='images/my-mail.svg') }}" alt="mail"></a>
-        </div>
-        <div class="burger-menu" id="burger">
-            <span></span>
         </div>
     </div>
 </header>

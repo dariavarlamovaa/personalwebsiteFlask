@@ -9,10 +9,56 @@
 
 }
 
+@media screen and (max-width: 650px) {
+    .home-lines {
+        display: none;
+        overflow: hidden;
+    }
+
+    .exclamation-mark-extra {
+        color: #A0CEDD;
+        display: initial;
+        font-weight: 600;
+    }
+
+    .name-extra {
+        color: #E29DD7;
+        font-weight: 600;
+    }
+
+    .occupation-extra {
+        color: #5E803D;
+        font-weight: 600;
+    }
+
+    .banner {
+        gap: 50px
+    }
+
+    .banner h1 {
+        font-size: 55px;
+    }
+
+    .banner p {
+        font-size: 35px;
+    }
+
+    .link-to-about {
+        font-size: 17px;
+    }
+
+    .my-svg-portrait {
+        min-width: 250px;
+    }
+}
+
 
 @media screen and (max-width: 375px) {
     .banner {
         gap: 100px
     }
 
+    .parts {
+        padding: 0 10px;
+    }
 }

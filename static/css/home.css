@@ -29,6 +29,11 @@
 
 }
 
+.exclamation-mark-extra {
+    display: none;
+    overflow: hidden;
+}
+
 .exclamation-mark {
     left: 52px;
     top: -9px;
