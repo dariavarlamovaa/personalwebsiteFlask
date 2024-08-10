@@ -39,10 +39,14 @@
     color: #9374e1;
 }
 
+.current-situation {
+    position: relative;
+}
+
 .highlight {
     position: absolute;
     bottom: -3px;
-    right: 190px;
+    right: 150px;
 }
 
 .toolbox, .experience, .education {

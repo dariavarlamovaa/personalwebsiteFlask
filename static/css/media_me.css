@@ -1,0 +1,82 @@
+@media screen and (max-width: 1000px) {
+    .banners-about {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding-top: 30px;
+        gap: 35px;
+    }
+
+    .about-me {
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    .my-pic {
+        max-width: 350px;
+    }
+
+    .all-jobs {
+        padding: 0 30px;
+    }
+
+}
+
+@media screen and (max-width: 680px) {
+    .tools {
+        grid-template-columns: auto auto auto;
+        grid-row-gap: 30px;
+    }
+}
+
+
+@media screen and (max-width: 650px) {
+    .sentence-me {
+        padding: 0 10px;
+    }
+
+    .job-place {
+        color: #D987CE;
+        font-weight: 600;
+    }
+
+    .highlight {
+        display: none;
+        overflow: hidden;
+    }
+
+    .experience-info {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .job-responsibilities ul {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .job-responsibilities li {
+        margin: 0 20px 0;
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .my-pic {
+        max-width: 300px;
+    }
+
+    .tools {
+        grid-template-columns: auto auto;
+    }
+
+    .education-info {
+        padding: 0 30px;
+    }
+}
+
+@media screen and (max-width: 315px) {
+    .my-pic {
+        max-width: 250px;
+    }
+}

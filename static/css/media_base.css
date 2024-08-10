@@ -33,7 +33,7 @@
         opacity: 1;
         width: 100%;
         position: absolute;
-        padding: 20px 30px;
+        padding: 25px 30px;
         box-sizing: border-box;
     }
 
@@ -89,5 +89,27 @@
 @media screen and (max-width: 400px) {
     .dev-email {
         font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .dev-email {
+        font-size: 15px;
+    }
+
+    .positive-sentence {
+        font-size: 15px;
+    }
+
+    .another-platforms {
+        font-size: 13px;
+    }
+
+    .page-info {
+        flex-direction: column;
+    }
+
+    .footer-copyright {
+        border-right: none;
     }
 }

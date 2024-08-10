@@ -58,6 +58,14 @@
         gap: 100px
     }
 
+    .banner p {
+        font-size: 30px;
+    }
+
+    .banner h1 {
+        font-size: 50px;
+    }
+
     .parts {
         padding: 0 10px;
     }

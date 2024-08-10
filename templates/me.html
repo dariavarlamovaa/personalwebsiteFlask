@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 {% block css %}
 <link rel="stylesheet" href="{{ url_for ('static', filename='css/me.css') }}">
+<link rel="stylesheet" href="{{ url_for ('static', filename='css/media_me.css') }}">
 {% endblock %}
 {% block content %}
 <section class="info-about">
@@ -23,9 +24,12 @@
                     which is
                     created with the aim of improving the process of interaction between the doctor and patients.</p>
                 <br>
-                <p>I'm currently available for hire: remote/onsite.
-                </p>
-                <img class="highlight" src="{{ url_for ('static', filename='images/highlight.svg') }}" alt="highlight">
+                <div class="current-situation">
+                    <p>I'm currently available for hire: <span class="job-place">remote/onsite</span>.
+                    </p>
+                    <img class="highlight" src="{{ url_for ('static', filename='images/highlight.svg') }}"
+                         alt="highlight">
+                </div>
             </div>
         </div>
         <hr class="horizontal-line">
@@ -130,13 +134,13 @@
                 </div>
             </div>
         </div>
-        <hr class="horizontal-line">
-        <div class="life-outside-work">
-            <div class="life-picture">
-                <img class="life-img" src="{{ url_for ('static', filename='images/life-outside-work.svg') }}"
-                     alt="life outside work">
-            </div>
-        </div>
+<!--        <hr class="horizontal-line">-->
+<!--        <div class="life-outside-work">-->
+<!--            <div class="life-picture">-->
+<!--                <img class="life-img" src="{{ url_for ('static', filename='images/life-outside-work.svg') }}"-->
+<!--                     alt="life outside work">-->
+<!--            </div>-->
+<!--        </div>-->
     </div>
 </section>
 
