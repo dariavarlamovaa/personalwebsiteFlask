@@ -1,0 +1,51 @@
+@media screen and (max-width: 1280px) {
+    .all-projects {
+        padding-right: 50px;
+        padding-left: 50px;
+        gap: 50px;
+    }
+
+    .projects-top {
+        padding: 30px 20px;
+        grid-template-columns: none;
+        gap: 10px;
+    }
+
+    .project-info {
+        width: auto;
+        height: auto;
+        position: initial;
+        text-align: center;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .one-project {
+        flex-direction: column;
+    }
+
+
+    .project-details {
+        top: 0;
+        height: fit-content;
+    }
+}
+
+
+@media screen and (max-width: 750px) {
+    .project-image {
+        width: 100%;
+    }
+
+
+}
+
+@media screen and (max-width: 650px) {
+
+    .line {
+        display: none;
+        overflow: hidden;
+    }
+
+
+}
