@@ -24,28 +24,50 @@
         flex-direction: column;
     }
 
-
     .project-details {
-        top: 0;
+        top: -25px;
         height: fit-content;
+    }
+
+    .project-image-div {
+        padding: 20px;
+    }
+
+    .project-image {
+        width: 100%;
+        max-width: unset;
     }
 }
 
 
 @media screen and (max-width: 750px) {
-    .project-image {
-        width: 100%;
+    .all-projects {
+        padding: 40px 20px 20px;
     }
 
 
 }
 
 @media screen and (max-width: 650px) {
+    .my-projects-h1 {
+        text-align: center;
+        font-size: 25px;
+    }
 
-    .line {
+    .line-project {
         display: none;
         overflow: hidden;
     }
 
+    .project-details {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .project-title {
+        font-size: 35px;
+        font-weight: 400;
+    }
 
 }

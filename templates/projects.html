@@ -14,7 +14,7 @@
             {% for project in projects[::-1] %}
             <div class="one-project">
                 <div class="project-image-div">
-                    <img class="project-image" src="{{ project.picture }}" alt="{{ project.title }}">
+                    <a href="{{ project.url }}" target="_blank"><img class="project-image" src="{{ project.picture }}" alt="{{ project.title }}"></a>
                 </div>
                 <div class="project-info">
                     <p class="project-description">{{ project.description }}</p>
