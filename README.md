@@ -11,8 +11,6 @@
 ## Try it here 
 https://dariavarlamovaaaa.pythonanywhere.com
 
-or
-
 ## Docker
 ```bash
 docker compose up
