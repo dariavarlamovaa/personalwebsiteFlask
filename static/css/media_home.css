@@ -1,8 +1,4 @@
 @media screen and (max-width: 1000px) {
-    .banner {
-        padding-top: 100px;
-    }
-
     .me-line {
         display: none;
     }
@@ -15,20 +11,24 @@
         overflow: hidden;
     }
 
+    .parts {
+        padding: 0 20px;
+    }
+
     .exclamation-mark-extra {
         color: #A0CEDD;
         display: initial;
-        font-weight: 600;
+        font-weight: 400;
     }
 
     .name-extra {
         color: #E29DD7;
-        font-weight: 600;
+        font-weight: 400;
     }
 
     .occupation-extra {
         color: #5E803D;
-        font-weight: 600;
+        font-weight: 400;
     }
 
     .banner {
@@ -53,20 +53,12 @@
 }
 
 
-@media screen and (max-width: 375px) {
-    .banner {
-        gap: 100px
-    }
-
+@media screen and (max-width: 380px) {
     .banner p {
         font-size: 30px;
     }
 
     .banner h1 {
         font-size: 50px;
-    }
-
-    .parts {
-        padding: 0 10px;
     }
 }

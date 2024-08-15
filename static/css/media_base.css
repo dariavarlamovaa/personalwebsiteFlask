@@ -20,6 +20,7 @@
 @media screen and (max-width: 650px) {
     .all-header-components {
         border-bottom: 1px solid #807e7e;
+        padding: 22px 30px;
     }
 
     .menu-nav {

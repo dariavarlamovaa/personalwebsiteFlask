@@ -33,6 +33,10 @@ h1, h2, h3, p {
     margin: 0;
 }
 
+h1 {
+    font-weight: 200;
+}
+
 li, ul {
     margin: 0;
     padding: 0;
@@ -95,7 +99,7 @@ svg {
     cursor: pointer;
     border: 0;
     padding: 0 20px;
-    font-size: 22px;
+    font-size: 20px;
     text-transform: uppercase;
 }
 
@@ -197,4 +201,10 @@ svg {
     border: 0.1px solid #d3d3d3;
     margin-top: 50px;
     margin-bottom: 50px;
+}
+
+.line {
+    align-self: center;
+    border-top: 2px solid #a7a7a7;
+    height: 0;
 }

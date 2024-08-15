@@ -1,3 +1,10 @@
+.about-top {
+    display: grid;
+    flex-direction: row;
+    grid-template-columns: 15% 85%;
+    padding: 30px 0;
+}
+
 .banners-about {
     display: flex;
     justify-content: space-evenly;

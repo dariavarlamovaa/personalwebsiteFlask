@@ -5,16 +5,6 @@
     padding: 30px 0;
 }
 
-.my-projects-h1 {
-    font-weight: 300;
-}
-
-.line {
-    align-self: center;
-    border-top: 2px solid #a7a7a7;
-    height: 0;
-}
-
 .all-projects {
     padding-top: 50px;
     display: flex;
@@ -34,7 +24,6 @@
     margin: 0 auto;
     padding: 50px;
     background-color: #f7f7f7;
-    /*background-color: #948f8f;*/
 }
 
 .project-image {

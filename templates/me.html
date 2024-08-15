@@ -6,14 +6,17 @@
 {% block content %}
 <section class="info-about">
     <div class="about container">
+        <div class="about-top">
+            <h1 class="about-me-h1">About me</h1>
+            <div class="line-about line" style="opacity: 1; width: 100%;"></div>
+        </div>
         <div class="banners-about">
             <div class="about-picture">
                 <img src="{{ url_for ('static', filename='images/me-arrow.svg') }}" alt="me :D">
                 <img class="my-pic" src="{{ url_for ('static', filename='images/me.jpeg') }}" alt="Coding girl">
             </div>
             <div class="about-me">
-                <p>I am a software developer based in <strong class="strong-word blue">Finland</strong>, focused mainly
-                    in
+                <p>I am a software engineer based in <strong class="strong-word blue">Finland</strong>, focused on
                     backend development.</p>
                 <br>
                 <p>Passionate <strong class="strong-word blue">Python</strong> enthusiast with a fervent love for
@@ -53,7 +56,7 @@
                 <img class="experience-img" src="{{ url_for ('static', filename='images/experience.svg') }}"
                      alt="experience">
             </div>
-            <p class="experience-sentence sentence-me">Here is a quick summary of my most recent experiences:</p>
+            <p class="experience-sentence sentence-me">Here is a short summary of my most recent experiences:</p>
             <div class="all-jobs">
                 <div class="experience-info">
                     <div class="job-info">
@@ -134,13 +137,13 @@
                 </div>
             </div>
         </div>
-<!--        <hr class="horizontal-line">-->
-<!--        <div class="life-outside-work">-->
-<!--            <div class="life-picture">-->
-<!--                <img class="life-img" src="{{ url_for ('static', filename='images/life-outside-work.svg') }}"-->
-<!--                     alt="life outside work">-->
-<!--            </div>-->
-<!--        </div>-->
+        <!--        <hr class="horizontal-line">-->
+        <!--        <div class="life-outside-work">-->
+        <!--            <div class="life-picture">-->
+        <!--                <img class="life-img" src="{{ url_for ('static', filename='images/life-outside-work.svg') }}"-->
+        <!--                     alt="life outside work">-->
+        <!--            </div>-->
+        <!--        </div>-->
     </div>
 </section>
 
