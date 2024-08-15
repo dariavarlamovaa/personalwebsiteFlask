@@ -1,8 +1,8 @@
 FROM python:3
 
-COPY . /my_pwFlask
+COPY . /my_pwflask
 
-WORKDIR /my_pwFlask
+WORKDIR /my_pwflask
 
 EXPOSE 5001
 

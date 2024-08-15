@@ -16,6 +16,7 @@
     .about-me {
         padding: 0 20px;
         box-sizing: border-box;
+        text-align: justify;
     }
 
     .my-pic {

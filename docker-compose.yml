@@ -1,7 +1,7 @@
 version: '3.8'
 
 services:
-  my_pwFlask:
+  my_pwflask:
     build: .
     ports:
       - 5001:5001
