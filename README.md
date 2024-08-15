@@ -1,6 +1,21 @@
-My Personal Website
+# My Personal Website
 
-In progress ⚠️
+## Made with 
+- Python
+- JavaScript
+- Flask
+- SQLite
+- HTML
+- CSS
 
+## Try it here 
+https://dariavarlamovaaaa.pythonanywhere.com
 
-<img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExcGV1MXBmb2UzM3Q2b2dvcTNyODA2ZG1lNDBrNXlyZmd6dTZrM2FsbSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/k0ijJhqrUP4T2EvmJ1/giphy.gif" width="100px" />
+or
+
+## Docker
+```bash
+docker compose up
+```
+
+<img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExM2lkNWUxYTEzOTBwamJ5eHBiM2gzN2RvN294dGw2MjZ3NWd1M3pkOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/vFKqnCdLPNOKc/giphy.gif" width="100px" />
